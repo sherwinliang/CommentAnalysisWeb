@@ -19,7 +19,7 @@
 <style>
 </style>
 <script>
-  import ECharts from 'vue-echarts/components/ECharts.vue'
+  import ECharts from 'vue-echarts'
   import 'echarts/lib/chart/line'
   import 'echarts/lib/component/tooltip'
 
@@ -104,7 +104,10 @@
             data: ['商品']
           },
           xAxis: {
-            data: []
+            data: [],
+            axisLabel: {
+                rotate: 30
+            }            
           },
           yAxis: {
           },

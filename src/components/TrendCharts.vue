@@ -29,7 +29,7 @@
 <style>
 </style>
 <script>
-  import ECharts from 'vue-echarts/components/ECharts.vue'
+  import ECharts from 'vue-echarts'
   import 'echarts/lib/chart/line'
   import 'echarts/lib/component/tooltip'
 
@@ -102,7 +102,7 @@
         productSelections: [],
         polar: {
           title: {
-            text: '商品评分趋势图'
+            text: '商品年度评分趋势图'
           },
           toolbox: {
             show: true,
@@ -125,7 +125,10 @@
             data: ['年份']
           },
           xAxis: {
-            data: []
+            data: [],
+            axisLabel: {
+                rotate: 45
+            }
           },
           yAxis: {
             axisLabel: {formatter:function(value, index){
