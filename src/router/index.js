@@ -97,18 +97,6 @@ export default new Router({
           component: Chart3D
         }
       ]
-    }, {
-      path: '/home',
-      component: Home,
-      name: '词云图2',
-      children: [
-        {
-          path: '/chart3D2',
-          iconCls: 'el-icon-search',
-          name: '词云图2',
-          component: Chart3D2
-        }
-      ]
     }
   ]
 })
